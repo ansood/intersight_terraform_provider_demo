@@ -17,8 +17,8 @@ provider "intersight" {
 
 
 resource "intersight_networkconfig_policy" "network_config1" {
-  name                     = "network_config1"
-  description              = "test policy"
+  name                     = var.policyname
+  description              = "demo policy"
   enable_dynamic_dns       = false
   preferred_ipv6dns_server = "::"
   enable_ipv6              = true
